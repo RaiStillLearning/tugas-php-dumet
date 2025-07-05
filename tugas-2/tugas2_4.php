@@ -19,7 +19,7 @@
     $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
     // Cek apakah file halaman tersedia
-    $file = "pages/$page.php";
+    $file = "$page.php";
     if (file_exists($file)) {
         include($file);
     } else {
