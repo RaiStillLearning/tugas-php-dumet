@@ -25,11 +25,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>login form</title>
 </head>
 <body>
-    <form action="" method="POST">
+    <form action="" method="POST" style="border: 1px solid black; padding: 20px; width: 300px; margin: auto; margin-top: 180px;">
         <h1>LOGIN</h1>
         <input type="text" name="username" placeholder="username" required>
         <input type="password" name="password" placeholder="password" required>
-        <input type="submit" name="login" value="Login">
+        <br/>
+        <input type="submit" name="login" value="Login" style="margin-top: 10px; text-align: center;">
     </form>
     <?php if(isset($error)) echo '<p style="color: red;">' . $error . '</p>';?>
 </body>
